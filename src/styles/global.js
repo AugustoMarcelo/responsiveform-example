@@ -16,6 +16,7 @@ export default createGlobalStyle`
 
   body {
     background: #7159c1;
+    -webkit-font-smoothing: antialiased;
   }
 
   button {
@@ -46,9 +47,22 @@ export default createGlobalStyle`
   /** Resetando estilização do React Select */
   .react-select__control, .react-select__value-container {
     height: 40px;
+    font-size: 14px;
+  }
+
+  .react-select__menu {
+    font-size: 14px;
   }
 
   .react-select__single-value {
     position: unset !important;
+    font-size: 14px;
+  }
+
+  .react-select__placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transform: none !important;
+    top: unset !important;
   }
 `;
